@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required Meta Tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Page Title -->
+  <title>JOBS.ENGINEER-Mumbai</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="jobs1.png" type="image/x-icon">
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="assets/css/animate-3.7.0.css">
+  <link rel="stylesheet" href="assets/css/font-awesome-4.7.0.min.css">
+  <link rel="stylesheet" href="assets/fonts/flat-icon/flaticon.css">
+  <link rel="stylesheet" href="assets/css/bootstrap-4.1.3.min.css">
+  <link rel="stylesheet" href="assets/css/owl-carousel.min.css">
+  <link rel="stylesheet" href="assets/css/nice-select.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+
+  <!-- link for moving icons-->
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Preloader Starts -->
+  <div class="preloader">
+    <div class="spinner"></div>
+  </div>
+  <!-- Preloader End -->
+
+  <!-- Header Area Starts -->
+  <header class="header-area main-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2">
+          <div class="logo-area">
+            <a href="index.html"><img src="JOBS1.png" alt="logo" height="70px"></a>
+          </div>
+        </div>
+        <div class="col-lg-10">
+          <div class="custom-navbar">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="main-menu">
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="pune.html">Pune</a></li>
+                <li><a href="bangalore.html">Bangalore</a></li>
+                <li><a href="hyderabad.html">Hyderabad</a></li>
+                <li class="active"><a href="mumbai.html">Mumbai</a>
+                  <li><a href="chennai.html">Chennai</a>
+              </li>
+              <li class="menu-btn">
+
+                <!--<a href="userlogin.html" class="login">log in</a>-->
+                <li><a href="intern.html" class="template-btn">Newz</a>
+                </ul>
+              </li>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Header Area End -->
+
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+    .job-listings {
+      width: 80%;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    .job {
+      display: flex;
+      align-items: center;
+      background-color: #fff;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 8px;
+      box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+    }
+    .job-logo {
+      margin-right: 20px;
+    }
+    .job-logo img {
+      width: 70px;
+      height: 70px;
+      border-radius: 10px;
+    }
+    .job-details {
+      flex-grow: 1;
+    }
+    .job h3 {
+      margin: 0;
+      font-size: 20px;
+      color: #333;
+    }
+    .job p {
+      margin: 5px 0 0;
+      color: #555;
+    }
+    .location {
+      display: flex;
+      align-items: center;
+      margin-top: 5px;
+    }
+    .location img {
+      width: 15px;
+      height: 15px;
+      margin-right: 5px;
+    }
+    .apply-button {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-left: 20px;
+      font-size: 14px;
+    }
+    .apply-button:hover {
+      background-color: #0056b3;
+    }
+    .package {
+      margin-top: 5px;
+      font-weight: bold;
+      color: #28a745;
+    }
+  </style>
+</head>
+<body>
+
+<div class="job-listings">
+  <h2>Available Jobs</h2>
+  <div id="job-container"></div>
+</div>
+
+<script>
+  const jobs = [
+    {
+      title: 'Software Engineer',
+      company: 'Tech Corp',
+      location: 'San Francisco, CA',
+      package: '$100,000 - $120,000',
+      logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/480px-Google_%22G%22_logo.svg.png', 
+      applyLink: '#'
+    },
+    {
+      title: 'Data Scientist',
+      company: 'Data Insights',
+      location: 'New York, NY',
+      package: '$120,000 - $140,000',
+      logo: 'https://via.placeholder.com/70',
+      applyLink: '#'
+    },
+    {
+      title: 'DevOps Engineer',
+      company: 'Cloud Services',
+      location: 'Austin, TX',
+      package: '$110,000 - $130,000',
+      logo: 'https://via.placeholder.com/70',
+      applyLink: '#'
+    },
+    {
+      title: 'Frontend Developer',
+      company: 'Creative Studio',
+      location: 'Los Angeles, CA',
+      package: '$95,000 - $110,000',
+      logo: 'https://via.placeholder.com/70',
+      applyLink: '#'
+    }
+  ];
+
+  function displayJobs() {
+    const jobContainer = document.getElementById('job-container');
+
+    jobs.forEach(job => {
+      const jobDiv = document.createElement('div');
+      jobDiv.className = 'job';
+
+      jobDiv.innerHTML = `
+        <div class="job-logo">
+          <img src="${job.logo}" alt="${job.company} logo">
+        </div>
+        <div class="job-details">
+          <h3>${job.title} - ${job.company}</h3>
+          <div class="location">
+            <img src="https://img.icons8.com/ios-filled/50/000000/marker.png" alt="Location icon">
+            <span>${job.location}</span>
+          </div>
+          <div class="package">Package: ${job.package}</div>
+        </div>
+        <a href="${job.applyLink}" class="apply-button">Apply Now</a>
+      `;
+
+      jobContainer.appendChild(jobDiv);
+    });
+  }
+
+  // Display all job listings on page load
+  displayJobs();
+</script>
+
+
+
+
+  <!-- Footer Area Starts -->
+<!-- Footer Section -->
+<footer>
+  <div class="footer-container">
+    <div class="logo">
+      <img src="JOBS1.png" alt="Company Logo"> <!-- Company Logo Placeholder -->
+    </div>
+    <div class="cities">
+      <h4>Cities:</h4>
+      <a href="pune-jobs.html">Pune</a>
+      <a href="mumbai-jobs.html">Mumbai</a>
+      <a href="chennai-jobs.html">Chennai</a>
+      <a href="hyderabad-jobs.html">Hyderabad</a>
+      <a href="bangalore-jobs.html">Bangalore</a>
+    </div>
+    <div class="social">
+      <h4>Follow Us:</h4>
+      <a href="https://instagram.com" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new--v1.png" alt="Instagram">
+      </a>
+      <a href="https://twitter.com" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/twitter.png" alt="Twitter">
+      </a>
+    </div>
+  </div>
+</footer>
+
+<style>
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+  }
+  footer .footer-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  footer .logo img {
+    width: 100px;
+    height: auto;
+  }
+  footer .cities, footer .social {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .cities a, footer .social a {
+    color: #fff;
+    margin: 5px 0;
+    text-decoration: none;
+  }
+  footer .cities a:hover {
+    color: #007bff;
+  }
+  footer .social {
+    display: flex;
+    gap: 10px;
+  }
+  footer .social a img {
+    width: 24px;
+    height: 24px;
+  }
+</style>
+
+  <!-- Footer Area End -->
+
+
+  <!-- Javascript -->
+  <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
+  <script src="assets/js/vendor/bootstrap-4.1.3.min.js"></script>
+  <script src="assets/js/vendor/wow.min.js"></script>
+  <script src="assets/js/vendor/owl-carousel.min.js"></script>
+  <script src="assets/js/vendor/jquery.nice-select.min.js"></script>
+  <script src="assets/js/vendor/ion.rangeSlider.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
